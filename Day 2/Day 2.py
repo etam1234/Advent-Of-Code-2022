@@ -25,6 +25,7 @@ scoreDict = {
         "C X": 7, "C Y" : 2, "C Z": 6
     } #the dictionary containing all the score values
 
+#Part 1
 def totalScore(): #adds the total score given the strategy guide
     strategy_guide = open("..\..\Advent Of Code\Advent-Of-Code-2022\Day 2\input.txt", 'r') 
     score = 0
@@ -35,6 +36,7 @@ def totalScore(): #adds the total score given the strategy guide
         #print(scoreDict[line.strip()])
     return score
 
+#Part 2
 def decryptGuide(): #the guide now is actually telling us how we should play, so let's adjust our dictionary as such; we can still call the scoredict to grab our score tho.
     score = 0
     #a new dictionary to determine the cheat strat we should play
