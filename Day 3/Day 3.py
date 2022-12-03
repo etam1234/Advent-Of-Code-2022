@@ -62,12 +62,12 @@ def calcBadgeSum():
             iter += 1
         elif(iter % 3 == 0):
             line3 = set(lineContent)
-            badgeLetter = list(line1 & line2 & line3)
+            badgeLetter = list(line1 & line2 & line3) #convert set back to list
     
-            value = calcValue(badgeLetter[0])
+            value = calcValue(badgeLetter[0]) #calcValue of letter
             sum += value
 
-            print(sum)
+            #print(sum)
             #print(calcValue(badgeLetter[0]))
             #calcValue(str(line1 & line2 & line3))
             line1, line2, line3 = "","",""
